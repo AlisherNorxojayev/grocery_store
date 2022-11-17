@@ -9,5 +9,27 @@ void main() {
 
   // Convert the contents to a map
   var groceryMap = jsonDecode(contents);
-  print(getTotal(groceryMap['products']));
+  List x = groceryMap["products"];
+  print(getTotal(x));
+  print(getAmount(x));
+  print(getTotalPrices(x)); 
+  print(getAmountFruits(x));
+  print(getTotalPricesFruits(x));
+  print(getAmountVegetables(x));
+  print(getTotalPricesVegetables(x));
+  print(getAmountDairy(x));
+  print(getTotalPricesDairy(x));
+  print(getAmountMeat(x));
+  print(getTotalPricesMeat(x));
+  print(getMostExpensive(x));
+  print(getCheapest(x));
+  print(getMostExpensiveFruit(x));
+  print(getCheapestFruit(x));
+  print(getMostExpensiveVegetable(x));
+  print(getCheapestVegetable(x));
+  print(getMostExpensiveDairy(x));
+  print(getCheapestDairy(x));
+  print(getMostExpensiveMeat(x));
+  print(getCheapestMeat(x));
+  // print(x);
 }
